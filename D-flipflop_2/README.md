@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ### The D Flip-flop
 A flip-flop is a device that has two stable states and is used to store state information.
 The D flip-flop captures input D and sends it to output Q at the positive or negative edge of the clock.
@@ -31,9 +30,21 @@ The D Flip-flop is made of a combination of logic gates. One of the combinations
   <img src="img/dffgates.png" width="250"/>
 </p>
 
+### Four bit shift register
+The bit shift register moves data sequentially from intput to output once every clock cycle.
+A bit shift register consists of D Flip-flop connected together. 
+The output of one latch is connected to the input of the next latch.
+They are all driven by the same clock signal making them synchronous.
+They are used for storage or movement of data.
+The number of latches in a bit shift register depend on the number of bits to be stored.<br>
 
+The 4 bit shift register looks as shown below
+<p align="left">
+  <img src="img/ShiftReg.jpg" width="250"/>
+</p>
 
-=======
-# systemc-examples
-A repository for SystemC Learning examples
->>>>>>> 07b3eff6f78f1bc8f0f99cf8366e4c3692c76b29
+The timming diagram of the 4 bit shift register is as follows
+<p align="left">
+  <img src="img/trace_file.png" width="250"/>
+</p>
+
